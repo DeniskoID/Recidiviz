@@ -2,11 +2,24 @@
   &__top {
     padding: 80px 0;
     background-color: #f7f8f8;
+
+    @include small-tablet {
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
   }
 
   &__left {
     grid-column: 5 span;
     padding-top: 33px;
+
+    @include big-desktop {
+      margin: var(--offset);
+    }
+
+    @include small-tablet {
+      grid-column: 4 span;
+    }
   }
 
   &__right {
@@ -15,6 +28,16 @@
     justify-content: flex-end;
     grid-column: 7 / 6 span;
     gap: 8px;
+
+    @include big-desktop {
+      grid-column: 12 span;
+      justify-content: flex-start;
+    }
+
+    @include small-tablet {
+      grid-column: 4 span;
+      flex-wrap: wrap;
+    }
   }
 
   &__title {

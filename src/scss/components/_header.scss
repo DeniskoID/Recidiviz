@@ -23,6 +23,12 @@
     align-items: center;
     margin-right: 32px;
     gap: 51px;
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 0;
+    }
   }
 
   &__link {
@@ -41,10 +47,40 @@
     &:active {
       color: var(--active-color);
     }
+
+    @include small-tablet {
+      font-size: 18px;
+    }
+  }
+
+  @include small-tablet {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    overflow-y: auto;
+    padding: var(--offset);
+    width: 80%;
+    height: 100vh;
+    background-color: #001414;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  @include small-tablet {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 51px;
   }
 }
 
-.nav__link.focus-visible {
+g .nav__link.focus-visible {
   outline: 1px solid var(--active-color);
   outline-offset: 3px;
+}
+
+.nav.menu--active {
+  visibility: visible;
+  transform: none;
 }

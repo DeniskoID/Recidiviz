@@ -3,8 +3,16 @@
   padding-bottom: 140px;
   background-color: #f4f5f5;
 
+  @include small-tablet {
+    padding: 80px 0;
+  }
+
   &__text {
     grid-column: 6 span;
+
+    @include small-tablet {
+      grid-column: 4 span;
+    }
   }
 
   &__title {
@@ -16,6 +24,12 @@
     line-height: 38px;
     letter-spacing: 1.2px;
     color: var(--dark-color);
+
+    @include small-tablet {
+      margin-bottom: 40px;
+      width: 100%;
+      max-width: unset;
+    }
   }
 
   &__list {
@@ -24,11 +38,20 @@
     column-gap: var(--offset);
     row-gap: 36px;
     grid-template-columns: repeat(6, 1fr);
+
+    @include small-tablet {
+      grid-column: 4 span;
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__item {
     grid-column: 3;
     grid-column: 3 span;
+
+    @include small-tablet {
+      grid-column: 4 span;
+    }
   }
 
   &__subtitle {
