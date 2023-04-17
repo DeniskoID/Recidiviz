@@ -5,10 +5,10 @@
   padding-bottom: 40px;
   min-height: 776px;
   color: var(--light-color);
-  background-image: url(../img/hero-bg.jpg);
+  background-image: url("../img/hero-bg.jpg");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
 
   &__container {
     margin-bottom: var(--offset);
@@ -27,8 +27,8 @@
     margin: 0;
     margin-bottom: 29px;
     font-family: var(--second-family);
-    font-size: 38px;
     font-weight: 400;
+    font-size: 38px;
     line-height: 44px;
     letter-spacing: 1.2px;
 
@@ -70,7 +70,7 @@
 
   &__link {
     display: block;
-    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-top: 1px solid rgb(255 255 255 / 60%);
     padding-top: 17px;
     font-weight: 400;
     font-size: 15px;

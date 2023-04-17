@@ -30,13 +30,13 @@
     gap: 8px;
 
     @include big-desktop {
-      grid-column: 12 span;
       justify-content: flex-start;
+      grid-column: 12 span;
     }
 
     @include small-tablet {
-      grid-column: 4 span;
       flex-wrap: wrap;
+      grid-column: 4 span;
     }
   }
 
@@ -59,7 +59,7 @@
   }
 
   &__btn {
-    border: 1px solid rgba(53, 83, 98, 0.2);
+    border: 1px solid rgb(53 83 98 / 20%);
     padding: 16px 34px;
     color: #00413e;
   }
@@ -75,7 +75,7 @@
 
   &__link {
     display: block;
-    border-top: 1px solid rgba(53, 83, 98, 0.3);
+    border-top: 1px solid rgb(53 83 98 / 30%);
     padding-top: 16px;
     padding-left: 32px;
     font-weight: 400;
@@ -91,11 +91,6 @@
       outline: none;
     }
 
-    @include hover {
-      border-color: var(--accent-color);
-      color: var(--accent-color);
-    }
-
     &:active {
       border-color: var(--active-color);
       color: var(--active-color);
@@ -104,20 +99,30 @@
     &--ted {
       background-image: url("../img/approach_icon-1.png");
     }
+
     &--nyt {
       background-image: url("../img/approach_icon-2.png");
     }
+
     &--scoop {
       background-image: url("../img/approach_icon-3.png");
     }
+
     &--press {
       background-image: url("../img/approach_icon-4.png");
     }
+
     &--time {
       background-image: url("../img/approach_icon-5.png");
     }
+
     &--freethink {
       background-image: url("../img/approach_icon-6.png");
+    }
+
+    @include hover {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
     }
   }
 }

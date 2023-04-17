@@ -127,7 +127,9 @@ a {
 
 .burger {
   @include burger;
+
   --burger-height: 20px;
+
   display: none;
   color: var(--light-color);
 

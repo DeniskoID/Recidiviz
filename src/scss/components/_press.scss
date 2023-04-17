@@ -26,9 +26,9 @@
   }
 
   &__link {
-    color: #00413e;
-    border: 1px solid rgba(53, 83, 98, 0.2);
+    border: 1px solid rgb(53 83 98 / 20%);
     border-radius: 80px;
+    color: #00413e;
   }
 
   &__list {
@@ -42,9 +42,10 @@
 
 .press-card {
   position: relative;
-  border-top: 1px solid rgba(53, 83, 98, 0.3);
+  border-top: 1px solid rgb(53 83 98 / 30%);
   padding-top: 16px;
   min-height: 145px;
+
   &__top {
     display: flex;
     align-items: center;
@@ -70,18 +71,23 @@
     &--ted {
       background-image: url("../img/approach_icon-1.png");
     }
+
     &--nyt {
       background-image: url("../img/approach_icon-2.png");
     }
+
     &--corr {
       background-image: url("../img/press-1.png");
     }
+
     &--justice {
       background-image: url("../img/press-2.png");
     }
+
     &--corr1 {
       background-image: url("../img/press-3.png");
     }
+
     &--crime {
       background-image: url("../img/press-4.png");
     }
@@ -127,6 +133,7 @@
     }
   }
 }
+
 .press-card__link.focus-visible {
   &::after {
     outline: 1px solid var(--active-color);
